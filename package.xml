@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>quickstyle</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Quick style</summary>
+    <description>An easy way to add styling in the head. </description>
+    <notes>basic</notes>
+    <authors><author><name>Septsite</name><user>septsite</user><email>biuro@septsite.pl</email></author></authors>
+    <date>2013-03-24</date>
+    <time>19:05:45</time>
+    <contents><target name="magecommunity"><dir name="Septsite"><dir name="Quickstyle"><dir name="Block"><file name="Quickstyle.php" hash="cd2fc98a7172a9425c636af46c9f83b7"/><dir name="_notes"><file name="dwsync.xml" hash="955b4947473d49504b2493afe2023638"/></dir></dir><dir name="Helper"><file name="Data.php" hash="3bbf9fa47e52356e974f6978dcfebd88"/><dir name="_notes"><file name="dwsync.xml" hash="c1743a765d797bb43118b2587ae9f88b"/></dir></dir><dir name="Model"><file name="Quickstyle.php" hash="3330a5056a8964c9880c651b611d5765"/><dir name="_notes"><file name="dwsync.xml" hash="a33fd96407b69f8683c7a461d8857264"/></dir></dir><dir name="controllers"><dir name="_notes"><file name="dwsync.xml" hash="27a7b9445af4b7596322b6d9c7fbdb40"/></dir></dir><dir name="etc"><dir name="_notes"><file name="dwsync.xml" hash="bf6250ae2824e6bdd9e280da66c24e9b"/></dir><file name="config.xml" hash="675e91d353b6bdfc2a6b667d7d1f3129"/><file name="system.xml" hash="865a22312897f8047e89442d3a05bcd6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Septsite_Quickstyle.xml" hash="921713492a510d29234e4487f1e4e823"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="quickstyle.xml" hash="60bffdc2065d14d77f1996b1fa33bc26"/></dir><dir name="template"><dir name="quickstyle"><file name="head.phtml" hash="a4f04be804c28f6f0bd1d79ad5dcad89"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

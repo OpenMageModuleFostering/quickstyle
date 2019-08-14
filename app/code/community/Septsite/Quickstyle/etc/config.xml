@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Septsite
+ * @package    Septsite_Quickstyle
+ * @author     www.septsite.pl  | szokart.eu
+ */
+ -->
+<config>
+    <modules>
+        <Septsite_Quickstyle>
+            <version>0.1.0</version>
+        </Septsite_Quickstyle>
+    </modules>
+	
+	<frontend>
+        <routers> 
+            <quickstyle>
+                <use>standard</use>
+                <args>
+                    <module>Septsite_Quickstyle</module>
+                    <frontName>Quickstyle</frontName>
+                </args>
+            </quickstyle>
+        </routers>
+        <layout>
+            <updates>
+                <quickstyle>
+                    <file>quickstyle.xml</file>
+                </quickstyle>
+            </updates>
+        </layout>
+    </frontend>
+
+	<admin>
+        <routers>
+			<quickstyle>
+				<use>admin</use>
+				<args>
+					<module>Septsite_Quickstyle</module>
+					<frontName>quickstyle</frontName>
+				</args>
+			</quickstyle>
+      
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Septsite_Quickstyle before="Mage_Adminhtml">Septsite_Quickstyle_Adminhtml</Septsite_Quickstyle>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+  <adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Septsite_Quickstyle>
+							<title>Quickstyle Module</title>
+							<sort_order>10</sort_order>
+						</Septsite_Quickstyle>
+						<system>
+						  <children>
+							<config>
+							  <children>
+								<quickstyle>
+								  <title>Sekcja ustawień Quickstyle</title>
+								</quickstyle>
+							  </children>
+							</config>
+						  </children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<quickstyle>
+					<file>quickstyle.xml</file>
+				</quickstyle>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <quickstyle>
+                <class>Septsite_Quickstyle_Model</class>
+            </quickstyle>
+			<septsite_quickstyle>
+                <class>Septsite_Quickstyle_Model</class>
+            </septsite_quickstyle>
+        </models>
+        <resources>
+            <quickstyle_setup>
+                <setup>
+                    <module>Septsite_Quickstyle</module>
+					 <resourceModel>quickstyle_mysql4</resourceModel>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </quickstyle_setup>
+            <quickstyle_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </quickstyle_write>
+            <quickstyle_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </quickstyle_read>
+        </resources>
+        <blocks>
+            <quickstyle>
+                <class>Septsite_Quickstyle_Block</class>
+            </quickstyle>
+        </blocks>
+        <helpers>
+            <quickstyle>
+                <class>Septsite_Quickstyle_Helper</class>
+            </quickstyle>
+        </helpers>
+    </global>
+	<default>
+        <quickstyle>
+            <info>
+				<quickstyle_style></quickstyle_style>
+            </info>
+        </quickstyle>
+    </default>
+</config>

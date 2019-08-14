@@ -1,0 +1,9 @@
+<?php
+/**
+ * @category   Septsite
+ * @package    Septsite_Quickstyle
+ * @author     www.septsite.pl  | szokart.eu
+ */
+?>
+<?php $quickstyle = Mage::getStoreConfig('quickstyle/info/quickstyle_style'); ?>
+<?php if($quickstyle!='') : ?><style><?php echo $quickstyle; ?></style><?php endif; ?>

@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/quickstyle",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Quick style",
+    "authors": [
+    {
+        "name": "Septsite",
+        "email": "biuro@septsite.pl"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
